@@ -1,0 +1,13 @@
+<div class="card"  *ngFor="let post of posts">
+  <div class="card-header">Post inattivi</div>
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p>{{post.body}}</p>
+      </blockquote>
+      <p>{{post.title}}</p>
+    </figure>
+  </div>
+</div>
+
+<!--NON DEVO SCRIVERE 5 CARD, ma una gestita con il ciclo for!!!!-->
