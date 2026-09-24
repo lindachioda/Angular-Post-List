@@ -11,7 +11,7 @@ export class PostServicies {
 
   async getPosts(): Promise<Post[]> //fondamentale per TS
   {
-    let res = await fetch(`/db.json`)
+    let res = await fetch(`./db.json`)
     return await res.json() as Post[] //as Post[] prende dal JSON array con la forma dell'interfaccia Post[]
   
   }
